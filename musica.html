@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música - Radio Lambayeque</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        header {
+            background: linear-gradient(90deg, #ff4d4d, #ff9966);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            font-weight: 700;
+        }
+        .music-section {
+            margin: 40px auto;
+            max-width: 1000px;
+        }
+        .music-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .music-card:hover {
+            transform: scale(1.02);
+        }
+        .music-thumb {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+        .music-info {
+            padding: 20px;
+        }
+        .music-info h3 {
+            margin-bottom: 10px;
+            color: #d43e3e;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Música</h1>
+    <p>Los mejores éxitos que suenan en nuestra radio</p>
+</header>
+
+<section class="music-section">
+    <div class="row g-4">
+
+        <!-- Canción 1 -->
+        <div class="col-md-4">
+            <div class="music-card">
+                <a href="https://www.youtube.com/watch?v=NmOyXW1kFOA" target="_blank">
+                    <img src="https://img.youtube.com/vi/NmOyXW1kFOA/hqdefault.jpg" class="music-thumb" alt="Mix Tropical">
+                </a>
+                <div class="music-info">
+                    <h3>Integracion Andina</h3>
+                    <p>HIMNO DEL MOVIMIENTO .</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Canción 2 -->
+        <div class="col-md-4">
+            <div class="music-card">
+                <a href="https://www.youtube.com/watch?v=I0lstAHUgGA" target="_blank">
+                    <img src="https://img.youtube.com/vi/I0lstAHUgGA/hqdefault.jpg" class="music-thumb" alt="Pop del Momento">
+                </a>
+                <div class="music-info">
+                    <h3>🎵 No llama</h3>
+                    <p>Los Alegres De Bambamarca.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Canción 3 -->
+        <div class="col-md-4">
+            <div class="music-card">
+                <a href="https://www.youtube.com/watch?v=QFF4uRk3rRE" target="_blank">
+                    <img src="https://img.youtube.com/vi/QFF4uRk3rRE/hqdefault.jpg" class="music-thumb" alt="Reggaetón Hits">
+                </a>
+                <div class="music-info">
+                    <h3>🎵 Sonia Morales</h3>
+                    <p> Perdoname</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
