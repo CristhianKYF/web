@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Primavera - En Vivo</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(180deg, #0d0d0d, #1a1a1a, #000);
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .player-card {
+            background: #141414;
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 0 25px rgba(255,0,0,0.15);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        h1, h4 {
+            letter-spacing: 1px;
+        }
+        .btn-live {
+            background: #ff1f1f;
+            color: white;
+            border: none;
+            font-size: 18px;
+            padding: 14px;
+            border-radius: 10px;
+            transition: 0.2s;
+        }
+        .btn-live:hover {
+            background: #d41616;
+            transform: scale(1.03);
+        }
+        .live-dot {
+            height: 12px;
+            width: 12px;
+            background: red;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 6px;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Radio Primavera</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="programas.html">Programas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="musica.html">Música</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-light ms-3 active" href="envivo.html">En Vivo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <div class="container text-center py-5">
+
+        <h1 class="fw-bold mb-3">
+            <span class="live-dot"></span> Radio Primavera - En Vivo
+        </h1>
+
+        <p class="lead">Transmisión oficial las 24 horas desde Chiclayo, Lambayeque</p>
+
+        <div class="player-card mx-auto mt-4" style="max-width: 480px;">
+
+            <!-- Imagen -->
+            <img src="assets/img/logo.jpg" class="img-fluid mb-4 rounded" alt="Radio Primavera">
+
+            <h4 class="fw-bold mb-3">Escuchando ahora:</h4>
+
+            <!-- AUDIO PLAYER -->
+            <audio id="player" controls autoplay preload="auto" style="width: 100%; border-radius: 10px;">
+                <source src="https://cors-proxy-yp5f.onrender.com/http://37.157.242.104:7890/;" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>Radio Primavera © 2025 - Chiclayo, Lambayeque, Perú</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
